@@ -1,0 +1,511 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
+  <style>
+    @import url("https://p.typekit.net/p.css?s=1&k=afb3bbf&ht=tk&f=35204.35205.35206.35207.35208.35209.35210&a=8524055&app=typekit&e=css");
+
+    @font-face {
+      font-family: "bicyclette";
+      src: url("https://use.typekit.net/af/39f12b/00000000000000007735acd8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),
+        url("https://use.typekit.net/af/39f12b/00000000000000007735acd8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),
+        url("https://use.typekit.net/af/39f12b/00000000000000007735acd8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+      font-display: auto;
+      font-style: normal;
+      font-weight: 300;
+      font-stretch: normal;
+    }
+
+    .container-email {
+      font-family: sans-serif;
+      color: black;
+      padding-left: 9rem;
+      padding-right: 9rem;
+      font-size: 1.1rem;
+    }
+
+    .heading-email {
+      font-size: 36px;
+      font-weight: bold;
+      padding-top: 14px;
+      padding-bottom: 25px;
+      min-width: 500px;
+    }
+
+    .heading-email-name {
+      font-size: 18px;
+      padding-bottom: 30px;
+      font-size: 18px;
+      color: black;
+    }
+
+    .heading-email-order {
+      font-size: 26px;
+      font-weight: bold;
+      padding-bottom: 12px;
+      padding-top: 18px;
+    }
+
+    .email-am-t {
+      padding-left: 434px;
+    }
+
+    .email-am-t1 {
+      padding-left: 434px;
+    }
+
+    .email-am-t2 {
+      padding-left: 470px;
+    }
+
+    .email-am-recuring-t {
+      font-weight: bold;
+      padding-left: 374px;
+    }
+
+    .please-email {
+      font-size: 14px;
+    }
+
+    .email-order-detail {
+      padding-top: 10px;
+      padding-bottom: 28px;
+      font-size: 16px;
+      color: #757575;
+    }
+
+    .email-button-sub {
+      border-radius: 18px;
+      font-size: 14px;
+
+      background-color: white;
+    }
+
+    .shipping-method {
+      margin-bottom: -14px;
+      color: #757575;
+    }
+
+    div.email-am {
+      font-size: 17px;
+      color: #757575;
+      padding-bottom: 6px;
+    }
+
+    .email-product-name {
+      font-weight: bold;
+      padding-left: 10px;
+    }
+
+    .col-3-email-pic {
+      height: 124px;
+      width: 21%;
+      background-color: grey;
+    }
+
+    .col-3-email-pic2 {
+      float: right;
+      padding-left: 197px;
+    }
+
+    .newsletter {
+      text-align: center;
+      color: black;
+      background-color: #f1f0ec;
+      padding-top: 29px;
+      padding-bottom: 29px;
+      font-size: 14px;
+    }
+
+    .email-quantity {
+      color: #757575;
+      font-size: 14px;
+      padding-left: 10px;
+    }
+
+    .payment-details-email {
+      padding-left: 366px;
+      color: #757575;
+    }
+
+    div.email-sum-detail {
+      padding-bottom: 7px;
+    }
+
+    div.email-order-sum {
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 20px;
+      padding-top: 23px;
+    }
+
+    div.email-am-recuring {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .footer-email {
+      text-align: center;
+      font-size: 14px;
+      text-decoration: underline;
+      color: #757575;
+    }
+
+    .email-help {
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 55px;
+      padding-top: 37px;
+      text-align: center;
+    }
+
+    .email-payment {
+      font-size: 14px;
+      font-weight: bold;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .email-help-update {
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 60px;
+      padding-top: 45px;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 575px) {
+      .container-email {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .col-3-email-pic2 {
+        float: right;
+        padding-left: 36px;
+      }
+
+      .email-am-t {
+        padding-left: 268px;
+      }
+
+      .email-am-t1 {
+        padding-left: 268px;
+      }
+
+      .email-am-t2 {
+        padding-left: 306px;
+      }
+
+      .email-am-recuring-t {
+        padding-left: 211px;
+      }
+
+      .payment-details-email {
+        padding-left: 2px;
+        color: #757575;
+        padding-top: 15px;
+      }
+
+      /* .social-icon {
+          margin-top: -23px !important;
+          padding-left: 61px !important;
+        } */
+    }
+
+    /* .social-icon {
+        padding-left: 280px;
+      } */
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+
+    .fa-facebook {
+      background: black;
+      color: white;
+      padding: 3px;
+    }
+
+    .fa-twitter {
+      background: white;
+      color: black;
+    }
+
+    .fa-google {
+      background: black;
+      color: white;
+    }
+
+    .fa-linkedin {
+      background: white;
+      color: black;
+    }
+
+    .fa-instagram {
+      background: white;
+      color: black;
+    }
+
+    body {
+      font-family: "bicyclette" !important;
+      overflow-x: hidden;
+      max-width: 800px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="all-product">
+    <section class="section2-products">
+      <div class="container-email">
+        <div>
+          <div>
+
+            <div class="heading-email">Application Rejected</div>
+
+            
+          </div>
+        
+          <br />
+          <div
+            style="border:1px solid #E1E1E1;font-size: 14px;padding:8px;border-radius:5px;background-color: #fbfafa;">
+            <div>
+
+            </div>
+            <div style="color: black" className="heading-email-name">
+              <b> Dear <%= name %>,</b>
+              <br />
+              <br />
+              <div style="color: #3D3D3D">
+                We have not been able to confirm your status as a Tecton employee. Please contact us directly at begreat@tectonlife.com so that we can assist your further with your application 
+             </div>
+              <br />
+               <div style="color: #3D3D3D">
+                Thank you for being an important part of Tecton 
+              </div>
+              <br />
+             
+              <br />
+            </div>
+            <br />
+            <div class="be" style="color: #DF7242">
+              <b>Be great!</b>
+            </div>
+            <br />
+            <br />
+            <div style="color:#3D3D3D;font-size: 14px;">
+              Amin Toussaint
+              <br />
+              VP Revenue Growth
+            </div>
+          </div>
+          <br />
+          <br />
+          <div style="border:1px solid orange ;padding:8px;border-radius:5px;background-color: #fcf8f8;">
+            <div style="font-size: 14px;color:black">
+              We look forward to witnessing all the great things you will accomplish. Make sure to tag us on Instagram
+              <a href="https://www.instagram.com/tectonlife/" style="color: #DF7242;text-decoration: underline;">@tectonlife</a> as you share your adventures
+              with Tecton and ketones!
+
+              <br />
+              <br />
+              <div class="be" style="color: orange">
+                <b>BE GREAT </b>
+              </div>
+              <br />
+              <div>
+                Amin Toussaint
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div>
+            <div style="color: #3D3D3D;font-size: 14px">
+              Tecton is a product that uses one of nature's most remarkable evolutionary tools to improve mental
+              clarity, muscular recovery, and physical endurance, allowing us to perform at our best when it counts.
+            </div>
+            <br />
+            <div style="color:#3D3D3D;font-size: 14px">
+              Feel great, do great, and BE GREAT!
+            </div>
+          </div>
+        </div>
+        <br />
+
+
+      </div>
+  </div>
+  <table bgcolor="#f1f0ec" width="100%">
+    <br>
+    <tr>
+      <td align="center">
+        <div style="font-size: 19px;">
+          We hope this isn’t goodbye forever.<br />
+          Subscribe to our newsletter!
+        </div>
+
+      </td>
+    </tr>
+    <br>
+    <tr>
+      <td>
+        <table width="100%">
+          <tr align="center">
+            <td>
+              <!--[if mso]>
+                          <v:rect
+                            xmlns:v="urn:schemas-microsoft-com:vml"
+                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                            href="https://tectonlife.com/contact-us"
+                            style="height: 36px; v-text-anchor: middle; width: 150px"
+                            strokecolor="black"
+                            fillcolor="#FFAC1C"
+                             stroked="false"
+                          >
+                            <w:anchorlock />
+                            <center style="color: #white">SUBSCRIBE</center>
+                          </v:rect>
+                        <![endif]-->
+              <a href="https://tectonlife.com/subscription" style="mso-hide: all"><button style="
+                              color: black;
+                              font-size: 14px;
+                              width: 150px;
+                              height: 36px;
+                              border: none;
+                              background-color: orange;
+                              letter-spacing: 2px;
+                              mso-hide: all;
+                              -webkit-text-size-adjust: none;
+                              font-weight: bold;
+                            ">
+                  SUBSCRIBE
+                </button></a>
+            </td>
+          </tr>
+        </table>
+
+    </tr>
+  </table>
+  <table width="100%" background="https://tectonlife.com/static/media/Topo7.84b1d89c96b9a4328014.png">
+    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"
+      style="mso-width-percent: 950; height: 180px">
+      <v:fill type="tile" src="https://tectonlife.com/static/media/Topo7.84b1d89c96b9a4328014.png" color="#7bceeb" />
+      <v:textbox inset="0,0,0,0">
+        <tr>
+          <td>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" role="presentation" align="center">
+                      <tbody>
+                        <tr>
+                          <td style="
+                           vertical-align: middle;
+                           text-align: center;
+                           padding-top: 20px;
+                           padding-bottom: 20px;
+                           padding-left: 12.5px;
+                           padding-right: 12.5px;
+                         ">
+                            <a href="https://www.facebook.com/Tecton-101116088857657/" style="text-decoration: none"
+                              target="_blank"><img src="https://tl-image-bucket.s3.amazonaws.com/facebook.png" alt=""
+                                height="32" width="32" align="center" style="
+                               display: block;
+                               height: auto;
+                               margin: 0 auto;
+                               border: 0;
+                             " /></a>
+                          </td>
+                          <td style="
+                           vertical-align: middle;
+                           text-align: center;
+                           padding-top: 20px;
+                           padding-bottom: 20px;
+                           padding-left: 12.5px;
+                           padding-right: 12.5px;
+                         ">
+                            <a href="https://twitter.com/tectonlife" style="text-decoration: none" target="_blank"><img
+                                src="https://tl-image-bucket.s3.amazonaws.com/twitter.png" alt="" height="32" width="32"
+                                align="center" style="
+                               display: block;
+                               height: auto;
+                               margin: 0 auto;
+                               border: 0;
+                             " /></a>
+                          </td>
+                          <td style="
+                           vertical-align: middle;
+                           text-align: center;
+                           padding-top: 20px;
+                           padding-bottom: 20px;
+                           padding-left: 12.5px;
+                           padding-right: 12.5px;
+                         ">
+                            <a href="https://www.instagram.com/tectonlife/" style="text-decoration: none"
+                              target="_blank"><img src="https://tl-image-bucket.s3.amazonaws.com/instagram.png" alt=""
+                                height="32" width="32" align="center" style="
+                               display: block;
+                               height: auto;
+                               margin: 0 auto;
+                               border: 0;
+                             " /></a>
+                          </td>
+                          <td style="
+                           vertical-align: middle;
+                           text-align: center;
+                           padding-top: 20px;
+                           padding-bottom: 20px;
+                           padding-left: 12.5px;
+                           padding-right: 12.5px;
+                         ">
+                            <a href="https://www.linkedin.com/showcase/tectonlife/about/" style="text-decoration: none"
+                              target="_blank"><img src="https://tl-image-bucket.s3.amazonaws.com/linkedin-in.png" alt=""
+                                height="32" width="32" align="center" style="
+                               display: block;
+                               height: auto;
+                               margin: 0 auto;
+                               border: 0;
+                             " /></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr align="center">
+                <td>
+                  <a style="color: black;text-decoration: underline;" href="https://www.tectonlife.com/privacyPolicy"target="_blank">Privacy Policy</a> | <a  style="color: black;text-decoration: underline;"  href="https://www.tectonlife.com/termsOfService" target="_blank">Terms & Conditions</a>
+                  <br />
+                  Tecton Group, LLC.<br /> P.O. Box 8498 • Atlanta, GA 30327 • (785) 538-6637<br />© 2023 Tecton.
+               </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </v:textbox>
+    </v:rect>
+  </table>
+  <!-- End Of Footer Part -->
+  </section>
+  </div>
+</body>
+
+</html>
