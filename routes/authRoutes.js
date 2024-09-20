@@ -1,8 +1,8 @@
 const express =require('express') ;
-const {
-	passportLoginSuccess,
-	passportLoginFailure,
-} =require('../controllers/authControllers.js') ;
+// const {
+// 	passportLoginSuccess,
+// 	passportLoginFailure,
+// } =require('../controllers/authControllers.js') ;
 const passport =require('passport') ;
 
 const router = express.Router();
