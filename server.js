@@ -36,7 +36,7 @@ const careersRoutes = require("./routes/careersRoutes.js");
 const preOrderRoutes = require("./routes/preOrderRoutes.js");
 const productRoutes = require("./routes/productRoutes.js");
 const userRoutes = require("./routes/userRoutes.js");
-const authRoutes = require("./routes/authRoutes.js");
+// const authRoutes = require("./routes/authRoutes.js");
 const orderRoutes = require("./routes/orderRoutes.js");
 const configRoutes = require("./routes/configRoutes.js");
 const uploadRoutes = require("./routes/uploadRoutes.js");
@@ -833,7 +833,7 @@ setupPassport();
 // configure all the routes
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
-app.use("/api/auth", authRoutes);
+// app.use("/api/auth", authRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/config", configRoutes);
 app.use("/api/upload", uploadRoutes);
