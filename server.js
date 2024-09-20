@@ -40,7 +40,7 @@ const userRoutes = require("./routes/userRoutes.js");
 const orderRoutes = require("./routes/orderRoutes.js");
 const configRoutes = require("./routes/configRoutes.js");
 const uploadRoutes = require("./routes/uploadRoutes.js");
-const setupPassport = require("./config/passportSetup.js");
+// const setupPassport = require("./config/passportSetup.js");
 const externalIdRoutes = require("./routes/externalIdRoutes");
 const subscriptionRoutes = require("./routes/subscriptionRoutes");
 const cartRoutes = require("./routes/cartRoutes");
@@ -828,7 +828,7 @@ app.use(passport.session());
 app.use(flash());
 
 // setup passport
-setupPassport();
+// setupPassport();
 
 // configure all the routes
 app.use("/api/products", productRoutes);
