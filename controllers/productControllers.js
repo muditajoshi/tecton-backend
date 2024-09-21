@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 const getAllProducts = asyncHandler(async (req, res) => {
   const page = Number(req.query.pageNumber) || 1; // the current page number being fetched
   const pageSize = Number(req.query.pageSize) || 10; // the total number of entries on a single page
-
+console.log("15")
   // match all products which include the string of chars in the keyword, not necessarily in the given order
   const keyword = req.query.keyword
     ? {
@@ -26,10 +26,10 @@ const getAllProducts = asyncHandler(async (req, res) => {
 
   // find all products that need to be sent for the current page, by skipping the documents included in the previous pages
   // and limiting the number of documents included in this request
-  const products = await Product.find({ ...keyword })
-    .limit(pageSize)
-    .skip(pageSize * (page - 1));
-
+  const products = await Product.find()
+    // .limit(pageSize)
+    // .skip(pageSize * (page - 1));
+console.log(products)
   // send the list of products, current page number, total number of pages available
   res.json({ products, page, pages: Math.ceil(count / pageSize) });
 });
