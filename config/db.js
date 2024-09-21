@@ -13,8 +13,8 @@ const mongoose = require("mongoose");
 const connectDB = () => {
   mongoose
     .connect(
-    `mongodb+srv://MongoDb:FQozgQgQK5On7X8N@cluster0.zbaz4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`,
-   {
+      `mongodb+srv://MongoDb:FQozgQgQK5On7X8N@cluster0.zbaz4.mongodb.net/tectonlife?retryWrites=true&w=majority&appName=Cluster0`
+      ,{
         //.connect("mongodb://localhost:27017/tectonlife", {
         useUnifiedTopology: true,
         useNewUrlParser: true,
