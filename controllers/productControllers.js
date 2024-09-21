@@ -26,9 +26,9 @@ console.log("15")
 
   // find all products that need to be sent for the current page, by skipping the documents included in the previous pages
   // and limiting the number of documents included in this request
-  const products = await Product.find()
-    // .limit(pageSize)
-    // .skip(pageSize * (page - 1));
+  const products = await Product.find({ ...keyword })
+    .limit(pageSize)
+    .skip(pageSize * (page - 1));
 console.log(products)
   // send the list of products, current page number, total number of pages available
   res.json({ products, page, pages: Math.ceil(count / pageSize) });
